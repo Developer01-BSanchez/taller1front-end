@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(250, 248, 160);
+}
+nav{
+
+}
+aside{
+
+}
+main{
+    display: flex;
+    justify-content: flex-end;
+}
+footer{
+
+}
