@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/javascript_icon_130900.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Ejercicio 1 - Palabra</h1>
+			</div>
+		</div>
+	</header>
+    <div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <h3>Brandon Sanchez</h3>
+                <hr>
+                <h3>Ejercicios:</h3>
+                <a href="palabra.html">1. Palabra</a>
+                <a href="temperatura.html">2. Temperatura</a>
+                <a href="t_triangulo.html">3. Tipo de Triangulo</a>
+                <a href="Intructores_m.html">4. Instructores = Materias</a>
+                <a href="figuras_g.html">5. Figuras Geometricas</a>
+                <a href="formulario.html">6. Formulario de registro</a>
+                <hr>
+                <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+                    Volver
+                </a>
+            </nav>
+            <label for="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-octagon" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></label>
+        </div>
+    </div>
+    <main>
+        <section id="contenido">
+
+            <section id="box">
+
+                
+
+                <div class="form-box">
+                    
+                    <form action="" id="form">
+                        <h1>Palabras</h1>
+
+                        <label for="palabra" id="label">Ingresa una palabra</label>
+
+                        <div class="input"> 
+                            <input type="text" id="palabra">
+                        </div>
+                        
+                        
+                        <div class="opcion">
+                            <select name="metodos" id="metodos">
+                                <option selected>Seleccione una operación</option>
+                                <option value="1">Mustrame la longitud</option>
+                                <option value="2">Conviertelo a mayuscula</option>
+                                <option value="3">Conviertelo en minuscula</option>
+                                <option value="4">Extraeme el primer caracter</option>
+                            </select>
+                        </div>
+                        
+                
+                        <button type="submit" onclick="palabras()" id="btn">Enviar</button>
+                    </form>
+                </div>
+
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/palabra.js"></script>
+</body>
+</html>
