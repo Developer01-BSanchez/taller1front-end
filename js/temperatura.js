@@ -1,26 +1,65 @@
-function palabras(){
+function temperatura(){
 
     let vtem=parseInt(document.getElementById('val-tem').value)
     let temp=parseInt(document.getElementById('grados').value)
     let conver=parseInt(document.getElementById('medidas').value)
 
-    if (temp==1 && conver==2) {
+    if (temp==1 && conver==1) {
 
-        let res=vtem+273.15
+        let res=vtem
 
-        alert(`El resultado de la conversion es que ${vtem} gardos celcius, equivalen a ${res} grados kelvin`)
+        alert(`${vtem} grados Celcius, equivalen a ${res} grados Celcius`)
         
-    } else if (op==2) {
+    } else if (temp==1 && conver==2) {
  
-        alert(palabra.toUpperCase())
+        let res=vtem+274.15 
+
+        alert(`${vtem} grados celcius, equivalen a ${res} grados kelvin`)
         
-    } else if (op==3){
+    } else if (temp==1 && conver==3){
 
-        alert(palabra.toLowerCase())
+        let res=(vtem * 9/5) + 32
 
-    } else if (op==4) {
+        alert(`${vtem} grados Celcius, equivalen a ${res} grados Fahrenheit`)
 
-        alert(palabra.charAt(0))
+    } else if (temp==2 && conver==1) {
+
+        let res=vtem-273.15
+
+        alert(`${vtem} grados Kelvin, equivalen a ${res} grados Celcius`)
+        
+    } else if (temp==2 && conver==2) {
+
+        let res=vtem
+
+        alert(`${vtem} grados Kelvin, equivalen a ${res} grados Kelvin`)
+        
+    } else if (temp==2 && conver==3) {
+
+        let res=(vtem-273.15)* 9/5 + 32
+
+        alert(`${vtem} grados Kelvin, equivalen a ${res} grados Fahrenheit`)
+        
+    }
+    else if (temp==3 && conver==1) {
+
+        let res=(vtem-32)*5/9
+
+        alert(`${vtem} grados Fahrenheit, equivalen a ${res} grados Celcius`)
+        
+    }
+    else if (temp==3 && conver==2) {
+
+        let res=(vtem-32)*5/9 + 273.15
+
+        alert(`${vtem} grados Fahrenheit, equivalen a ${res} grados Kelvin`)
+        
+    }
+    else if (temp==3 && conver==3) {
+
+        let res=vtem
+
+        alert(`${vtem} grados Fahrenheit, equivalen a ${res} grados Fahrenheit`)
         
     }
 }
